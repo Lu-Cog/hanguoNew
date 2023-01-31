@@ -1,0 +1,98 @@
+.navmean {
+  border-bottom: 1px solid #890000;
+  padding-top: 40px;
+  padding-bottom: 21px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.navmean a:last-child {
+  color: #890000;
+}
+.productInfo {
+  margin-top: 35px;
+}
+.productInfo .pro_info {
+  border: 1px solid #890000;
+}
+.productInfo .pro_info .info_head {
+  padding: 12px 24px;
+  font-size: 36px;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: #890000;
+}
+.productInfo .pro_info .info_bom .bom_left {
+  margin: 22px;
+  border: 1px solid #890000;
+}
+.productInfo .pro_info .info_bom .bom_right {
+  flex: 1;
+  border-left: 1px solid #890000;
+}
+.productInfo .pro_info .info_bom .bom_right > div {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #890000;
+}
+.productInfo .pro_info .info_bom .bom_right > div > p:first-child {
+  width: 120px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+.productInfo .pro_info .info_bom .bom_right > div a {
+  color: #0080D9;
+}
+.productInfo .pro_info .info_bom .bom_right > div:nth-child(1) {
+  flex: 2;
+}
+.productInfo .pro_info .info_bom .bom_right > div:nth-child(2) {
+  flex: 1.5;
+}
+.productInfo .pro_info .info_bom .bom_right > div:nth-child(2) p:last-child {
+  font-size: 36px;
+  font-weight: 400;
+  color: #890000;
+}
+.productInfo .pro_info .info_bom .bom_right > div:nth-child(3) {
+  flex: 1.2;
+}
+.productInfo .pro_info .info_bom .bom_right > div:nth-child(4),
+.productInfo .pro_info .info_bom .bom_right > div:nth-child(5),
+.productInfo .pro_info .info_bom .bom_right > div:nth-child(6) {
+  flex: 1;
+}
+.productInfo .pro_spec {
+  min-height: 121px;
+  border: 1px solid #890000;
+  margin-top: 27px;
+}
+@media screen and (max-width: 750px) {
+  .productInfo .pro_info .info_head {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .productInfo .pro_info .info_bom .bom_left {
+    margin: 10px;
+    width: 30%;
+  }
+  .productInfo .pro_info .info_bom .bom_left img {
+    width: 100%;
+  }
+  .productInfo .pro_info .info_bom .bom_right {
+    width: 70%;
+  }
+  .productInfo .pro_info .info_bom .bom_right > div {
+    padding-left: 10px;
+  }
+  .productInfo .pro_info .info_bom .bom_right > div > p:first-child {
+    font-size: 12px;
+  }
+  .productInfo .pro_info .info_bom .bom_right > div > img {
+    height: 50px;
+  }
+  .productInfo .pro_info .info_bom .bom_right > div:nth-child(2) p:last-child {
+    font-size: 16px;
+  }
+}

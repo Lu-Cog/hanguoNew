@@ -1,0 +1,109 @@
+.contact .map {
+  position: relative;
+}
+.contact .map img {
+  width: 100%;
+}
+.contact .map .point,
+.contact .map .point::before,
+.contact .map .point::after {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  content: '';
+}
+.contact .map .point::before {
+  animation: scale 2s infinite;
+}
+.contact .map .point::after {
+  animation: scale2 2s infinite;
+}
+.contact .map .point,
+.contact .map .point::before,
+.contact .map .point::after {
+  /* 设置颜色 */
+  background-color: rgba(241, 34, 30, 0.9);
+}
+.contact .mySwiper6 .swiper-wrapper {
+  height: 500px !important;
+}
+.contact .mySwiper6 .swiper-slide {
+  margin: 20px 0;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0s;
+}
+.contact .mySwiper6 .swiper-slide .swi_top {
+  margin-bottom: 68px;
+}
+.contact .mySwiper6 .swiper-slide .swi_top .name {
+  font-size: 30px;
+  font-weight: 500;
+}
+.contact .mySwiper6 .swiper-slide .swi_top .logo {
+  box-shadow: 0 0 10px 4px rgba(225, 225, 225, 0.6);
+  border-radius: 50%;
+}
+.contact .mySwiper6 .swiper-slide .swi_con {
+  margin-bottom: 23px;
+}
+.contact .mySwiper6 .swiper-slide .swi_con img {
+  margin-right: 20px;
+}
+.contact .mySwiper6 .swiper-slide .swi_con .bai {
+  display: none;
+}
+.contact .mySwiper6 .swiper-slide:hover {
+  background-color: #eee;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+@keyframes scale2 {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(8);
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contact .map img {
+    width: 100%;
+  }
+  .contact .map .point,
+  .contact .map .point::before,
+  .contact .map .point::after {
+    width: 6px;
+    height: 6px;
+  }
+  .contact .mySwiper6 {
+    height: 260px;
+  }
+  .contact .mySwiper6 .swiper-slide {
+    padding: 10px;
+  }
+  .contact .mySwiper6 .swiper-slide .swi_top {
+    margin-bottom: 20px;
+  }
+  .contact .mySwiper6 .swiper-slide .swi_top .name {
+    font-size: 16px;
+  }
+  .contact .mySwiper6 .swiper-slide .swi_con {
+    margin-bottom: 10px;
+  }
+  .contact .mySwiper6 .swiper-slide .swi_con span {
+    word-break: break-all;
+  }
+}

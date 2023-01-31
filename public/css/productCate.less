@@ -1,0 +1,256 @@
+.banner {
+    img {
+        width: 100%;
+    }
+}
+
+.navmean {
+    margin: 22px 23px;
+    border-bottom: 1px solid #890000;
+    padding-bottom: 21px;
+    font-size: 18px;
+    font-weight: 400;
+
+    a {
+        &:last-child {
+            color: #890000;
+        }
+    }
+}
+
+.product {
+    margin: 22px 23px;
+
+    .proTitle {
+        display: inline-block;
+        border-bottom: #890000 1px solid;
+        padding: 0 40px 21px 0;
+
+        img {
+            margin-right: 20px;
+        }
+
+        span {
+            font-size: 36px;
+            font-weight: 400;
+            color: #890000;
+        }
+    }
+
+    .proContent {
+        margin-top: 16px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+
+    .products {
+        border: 1px solid #890000;
+        margin-top: 30px;
+
+        .prosTitle {
+            text-align: center;
+            background-color: #890000;
+            color: #fff;
+            padding: 15px 0;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .prosList {
+            padding: 40px 28px;
+            box-sizing: border-box;
+            overflow: auto;
+
+            &::-webkit-scrollbar {
+                /*滚动条整体样式*/
+                // width: 10px;                        /*高宽分别对应横竖滚动条的尺寸*/
+                height: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                /*滚动条里面小方块*/
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+                background: #890000;
+            }
+
+            &::-webkit-scrollbar-track {
+                /*滚动条里面轨道*/
+                /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+                border-radius: 10px;
+                background: #eee;
+            }
+
+            .prosItem {
+                width: 282px;
+                margin-right: 23px;
+                flex-shrink: 0;
+
+                .prosItem_title {
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin-bottom: 26px;
+                }
+
+                ul {
+                    width: 100%;
+                    height: 177px;
+                    border: 1px solid #890000;
+                    padding: 10px 0;
+                    overflow: auto;
+
+                    &::-webkit-scrollbar {
+                        /*滚动条整体样式*/
+                        width: 10px;
+                        /*高宽分别对应横竖滚动条的尺寸*/
+                        height: 1px;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        /*滚动条里面小方块*/
+                        border-radius: 10px;
+                        -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+                        background: #890000;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        /*滚动条里面轨道*/
+                        /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+                        border-radius: 10px;
+                        background: #eee;
+                    }
+
+                    li {
+                        padding: 0 10px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pro_form {
+        margin: 34px auto;
+        font-size: 20px;
+        div {
+            &:last-child{
+                input {
+                    height: 16px;
+                    width: 600px;
+                    height: 50px;
+                    margin-right: 0;
+                    padding: 15px 23px;
+                    border: 1px solid #890000;
+                    border-radius: 6px 0 0 6px;
+                }
+                div{
+                    width: 100px;
+                    height: 50px;
+                    background-color: #890000;
+                    border-radius: 0 6px 6px 0;
+                }
+            }
+        }
+    }
+    .layui-table{
+        th{
+            background-color: #890000;
+            color: #fff;
+            text-align: center;
+            width: 200px;
+        }
+        
+        td{
+            text-align: center;
+        }
+        .headImg{
+            cursor: pointer;
+        }
+        .table_input{
+            input{
+                height: 40px;
+                width: 70px;
+                border: 1px solid #890000;
+                padding: 6px;
+                border-radius: 4px 0 0 4px;
+
+            }
+            p{
+                height: 40px;
+                background-color: #890000;
+                color: #fff;
+                width: 100px;
+                border-radius:0 4px 4px 0;
+
+            }
+        }
+    }
+}
+.proList{
+    .proItem{
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        .headImg{
+            width: 30%;
+        }
+        >div{
+            flex: 1;
+            margin-left: 10px;
+        }
+        .table_input{
+            margin-top: 10px;
+            justify-content: flex-end;
+            input{
+                height: 26px;
+                width: 60px;
+                border: 1px solid #890000;
+                padding: 6px;
+                border-radius: 4px 0 0 4px;
+
+            }
+            p{
+                height: 26px;
+                background-color: #890000;
+                color: #fff;
+                width: 60px;
+                border-radius:0 4px 4px 0;
+
+            }
+        }
+    }
+}
+@media screen and (max-width:750px) {
+    .product {
+        .products {
+            .prosList{
+                padding: 20px;
+                .prosItem{
+                    width: 180px;
+                    .prosItem_title{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .pro_form{
+            div{
+                &:last-child {
+                    input{
+                        width: 100%;
+                        height: 40px;
+                        padding: 0 10px;
+                    }
+                    div{
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

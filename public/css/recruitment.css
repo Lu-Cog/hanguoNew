@@ -1,0 +1,85 @@
+.join .join_main .title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 36px;
+  margin-bottom: 21px;
+}
+.join .join_main .ctitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 36px;
+}
+.join .join_main .join_list {
+  margin-top: 50px;
+}
+.join .join_main .join_list .join_item {
+  margin-bottom: 30px;
+  cursor: pointer;
+  padding: 30px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+.join .join_main .join_list .join_item .join_i_top p {
+  font-size: 26px;
+  font-weight: 500;
+  color: #000000;
+}
+.join .join_main .join_list .join_item .join_i_bom {
+  height: 0;
+  overflow: hidden;
+}
+.join .join_main .join_list .join_item .join_i_bom .ititle {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 36px;
+  margin: 20px 0;
+}
+.join .join_main .join_list .join_item .join_i_bom .content {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 36px;
+}
+.join .join_main .join_list .join_item .join_i_bom .tip {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 36px;
+}
+.join .join_main .join_list .join_item .join_i_bom .tip span {
+  color: #890000;
+}
+.join .join_main .join_list .active .join_i_top img {
+  transform: rotate(-180deg);
+}
+.join .join_main .join_list .active .join_i_bom {
+  height: 500px;
+}
+@media screen and (max-width: 750px) {
+  .join .join_main .join_list .join_item {
+    padding: 10px;
+  }
+  .join .join_main .join_list .join_item .join_i_top p {
+    font-size: 18px;
+  }
+  .join .join_main .join_list .join_item .join_i_bom .ititle {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: initial;
+  }
+  .join .join_main .join_list .join_item .join_i_bom .content {
+    line-height: initial;
+  }
+  .join .join_main .join_list .join_item .join_i_bom .tip {
+    font-size: 14px;
+    line-height: initial;
+  }
+  .join .join_main .join_list .active .join_i_bom {
+    height: 600px;
+  }
+}

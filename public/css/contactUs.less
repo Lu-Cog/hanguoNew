@@ -1,0 +1,152 @@
+.contact {
+    .map {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .point,
+        .point::before,
+        .point::after {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            content: '';
+        }
+
+        .point::before {
+            animation: scale 2s infinite;
+        }
+
+        .point::after {
+            animation: scale2 2s infinite;
+        }
+
+        .point,
+        .point::before,
+        .point::after {
+            /* 设置颜色 */
+            background-color: rgba(241, 34, 30, .9);
+        }
+    }
+
+    .mySwiper6 {
+        .swiper-wrapper {
+            height: 500px !important;
+        }
+
+        .swiper-slide {
+            margin: 20px 0;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px 4px rgba(0, 0, 0, .1);
+            transition: all 0s;
+
+            .swi_top {
+                margin-bottom: 68px;
+
+                .name {
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+
+                .logo {
+                    box-shadow: 0 0 10px 4px rgba(225, 225, 225, .6);
+                    border-radius: 50%;
+                }
+            }
+
+            .swi_con {
+                margin-bottom: 23px;
+
+                img {
+                    margin-right: 20px;
+                }
+
+                .bai {
+                    display: none;
+                }
+            }
+
+            &:hover {
+                background-color: #eee;
+                // color: #fff;
+                // .swi_con{
+                //     .hong{
+                //         display: none;
+                //     }
+                //     .bai{
+                //         display: block;
+                //     }
+                // }
+            }
+        }
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+        opacity: .9
+    }
+
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+@keyframes scale2 {
+    0% {
+        transform: scale(1);
+        opacity: .9;
+    }
+
+    100% {
+        transform: scale(8);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .contact {
+        .map {
+            img {
+                width: 100%;
+            }
+
+            .point,
+            .point::before,
+            .point::after {
+                width: 6px;
+                height: 6px;
+            }
+        }
+
+        .mySwiper6 {
+            height: 260px;
+
+            .swiper-slide {
+                padding: 10px;
+
+                .swi_top {
+                    margin-bottom: 20px;
+
+                    .name {
+                        font-size: 16px;
+                    }
+                }
+
+                .swi_con {
+                    margin-bottom: 10px;
+
+                    span {
+                        word-break: break-all;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,207 @@
+.global {
+
+    .glo_top {
+        box-shadow: 0 0 10px 4px rgba(125, 0, 0, .1);
+        margin-bottom: 55px;
+
+        img {
+            width: 60%;
+        }
+
+        .gTopRight {
+            flex: 1;
+            padding: 30px 40px;
+
+            .global_name {
+                span {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #BFBFBF;
+                    margin-left: 20px;
+
+                    &:first-child {
+                        font-size: 26px;
+                        color: #000;
+                        display: inline-block;
+                        margin: 0 70px 0 0;
+                    }
+                }
+            }
+
+            .alobal_address {
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #BFBFBF;
+
+                    &:first-child {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #000000;
+                    }
+                }
+            }
+
+            .global_link {
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-decoration: underline;
+                    color: #BD0000;
+                }
+            }
+        }
+    }
+
+    .glo_list {
+        .glo_item {
+            margin-bottom: 55px;
+            box-shadow: 0 0 10px 4px rgba(125, 0, 0, .1);
+            width: 48%;
+
+            img {
+                width: 100%;
+            }
+
+            .glo_item_info {
+                padding: 21px;
+
+                .glo_right {
+                    margin-left: 21px;
+
+                    .global_name {
+                        span {
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #BFBFBF;
+                            margin-left: 20px;
+
+                            &:first-child {
+                                font-size: 26px;
+                                color: #000;
+                                display: inline-block;
+                                margin: 0 70px 0 0;
+                            }
+                        }
+                    }
+
+                    .alobal_address {
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #BFBFBF;
+                            word-break: break-all;
+                            word-wrap: break-word;
+
+                            &:first-child {
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: #000000;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+
+                    .global_link {
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            text-decoration: underline;
+                            color: #BD0000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+    .global {
+        .glo_top {
+            img {
+                width: 50%;
+            }
+
+            .gTopRight {
+                width: 50%;
+                padding: 10px;
+
+                .global_name {
+                    span {
+                        &:first-child {
+                            font-size: 18px;
+                            margin-right: 10px;
+                        }
+
+                        font-size: 12px;
+                        margin-right: 10px;
+                    }
+                }
+
+                .alobal_address {
+                    p {
+                        &:first-child {
+                            font-size: 14px;
+                        }
+
+                        font-size: 12px;
+                    }
+                }
+
+                .global_link {
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    p {
+                        word-break: break-all;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .glo_list {
+            flex-direction: column;
+
+            .glo_item {
+                width: 100%;
+                margin-bottom: 20px;
+                .glo_item_info {
+                    padding: 10px;
+
+                    .glo_right {
+                        margin: 0;
+
+                        .global_name {
+                            span {
+                                &:first-child {
+                                    font-size: 18px;
+                                    margin-right: 10px;
+                                }
+
+                                font-size: 12px;
+                                margin-right: 10px;
+                            }
+                        }
+                        .alobal_address {
+                            p {
+                                &:first-child {
+                                    font-size: 14px;
+                                }
+        
+                                font-size: 12px;
+                            }
+                        }
+                        .global_link {
+                            p {
+                                word-break: break-all;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

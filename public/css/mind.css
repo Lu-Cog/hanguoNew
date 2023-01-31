@@ -1,0 +1,88 @@
+.mind {
+  padding: 36px 0 49px;
+}
+.mind .title {
+  font-size: 26px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 36px;
+  border-bottom: 2px solid #890000;
+}
+.mind .content {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 36px;
+  margin: 40px 0;
+}
+.auth {
+  background: url(../img/psoapldfd5o43hu6mnz507v59gc6fm4hte95db03a7-d0e6-4773-ab4f-659550fd344e.png) -1px 0px no-repeat;
+  background-size: 100% 100%;
+  padding: 117px 0 90px;
+}
+.auth .authList .authItem {
+  width: 32%;
+  padding: 38px 60px;
+  color: #fff;
+}
+.auth .authList .authItem .num {
+  font-size: 26px;
+  font-weight: 500;
+}
+.auth .authList .authItem .title {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 69px 0 27px;
+}
+.auth .authList .authItem .conter {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 31px;
+  height: 100px;
+}
+.auth .authList .authItem:nth-child(1n) {
+  background: url(../img/pssfszdyz88g9k2o0yqkv2mc1qqa9idr6ga330865f4-3596-4571-a6a3-2b71cf799601.png) 100% center / 100% 100% no-repeat;
+}
+.auth .authList .authItem:nth-child(2n) {
+  background: url(../img/ps1ldmrgfra7ihwk8tatvv8k1ld8xq4ihj938aa5713-9a9c-4711-aade-353088d19e89.png) 100% center / 100% 100% no-repeat;
+}
+.auth .authList .authItem:nth-child(3n) {
+  background: url(../img/pso2pfd9iih5s6vmqkzjwx4fae7o30pc23fbc90b9-505f-42b2-85b9-17aeb92a6500.png) 100% center / 100% 100% no-repeat;
+}
+.auth .tip {
+  margin-top: 80px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #890000;
+  text-align: center;
+  line-height: 31px;
+}
+@media screen and (max-width: 750px) {
+  .imgList {
+    flex-wrap: wrap;
+  }
+  .auth {
+    padding: 20px 0;
+  }
+  .auth .authList {
+    flex-direction: column;
+  }
+  .auth .authList .authItem {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .auth .authList .authItem .title {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .auth .authList .authItem .conter {
+    height: auto;
+  }
+  .auth .tip {
+    margin: 20px auto 0;
+    font-size: 12px;
+    width: 90%;
+  }
+}

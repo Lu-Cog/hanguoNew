@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汉国集团</title>
+    <link rel="stylesheet" href="public/css/common.css">
+    <link rel="stylesheet" href="public/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="public/lib/animate.css">
+    <link rel="stylesheet" href="public/css/team.css">
+    <link rel="stylesheet" href="public/lib/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="public/lib/upload/basic.min.css">
+    <link rel="stylesheet" href="public/lib/upload/dropzone.min.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="banner">
+        <img src="public/img/pshbq1vgxl24hqxlxqz295pnvxiq5t3vklc3e9d5923-cc00-403b-aaec-fa7cf239c0e3.jpg" />
+    </div>
+    <div class="team">
+        <div class="comtitle w maAuto">
+            <div class="flex aend">
+                <div class="cn  wow fadeInUp">IC Max的领导团队</div>
+            </div>
+        </div>
+        <div class="team_main w maAuto flex acen jbet fWrap">
+            
+        </div>
+    </div>
+    <div class="form">
+        <div class="comtitle w maAuto">
+            <div class="flex aend">
+                <div class="cn  wow fadeInUp">查询报价</div>
+                <div class="en wow fadeInUp">Inquire about quotation</div>
+            </div>
+        </div>
+        <div class="form_main w maAuto flex jbet">
+            <div class="form_left flex fWrap acen jbet">
+                <div class="textInput">
+                    <label for="">名<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">姓<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">公司<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">邮箱<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">电话号码<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">元件编号<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">联系地址</label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">元件数量</label>
+                    <input type="text">
+                </div>
+                <div class="textarea">
+                    <label for="">留言</label>
+                    <textarea name="" id="" cols="10" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="form_right">
+                <div class="flex acen">
+                    <img class="thumbnail_12" referrerpolicy="no-referrer" style="margin-right: 6px;"
+                        src="public/img/pssvj9ahup5mgkja4afjredbds86o58qh1ede29307-c508-4054-b5d3-41675a252121.png" />
+                    <span class="text-group_14">BOM文件上传</span>
+                </div>
+                <form action="/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
+                    <div class="dz-message needsclick">
+                        <p class="dztitle moblieHide">BOM文件拖拽到这里</p>
+                        <div class="bomUp">BOM上传</div>
+                        <div class="imgUp">图片上传</div>
+                        <div class="dow">
+                            <img class="image_21" referrerpolicy="no-referrer"
+                                src="public/img/psrmcsng7s2fm99qzi9o6b5h126sce8wte9c9b9cc-f97f-4cde-b6ce-d5aa651539ce.png" />
+                            <span class="text-group_15">
+                                参考标准模板&nbsp;&nbsp;提升配单准确率
+                            </span>
+                        </div>
+                        <p class="dzcontent">1.请下载“BOM单参考标准模板”;</p>
+                        <p class="dzcontent">2.复制并粘贴BOM数据到模板中，并将文件保存为xls,xlsx或.csv格式；</p>
+                        <p class="dzcontent">3.点击“选择文件”上传保存的文件，文件大小在2M以下</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="submit">提交</div>
+    </div>
+    <div id="footer"></div>
+</body>
+<script src="public/js/clock.js"></script>
+<script src="public/js/jquery.js"></script>
+<script src="public/js/wow.js"></script>
+<script src="public/lib/layui/layui.js"></script>
+<script src="public/js/jquery.waypoints.min.js"></script>
+<script src="public/js/jquery.countup.min.js"></script>
+<script src="public/lib/swiper/swiper-bundle.min.js"></script>
+<script src="public/js/common.js"></script>
+<script src="public/lib/upload/dropzone.min.js"></script>
+<script>
+    let arr = [{name:'奥古斯特',post:'首席贸易官'},{name:'詹妮弗·卡巴拉',post:'首席全球执行官'},{name:'利奥波德',post:'首席运营官'},{name:'依耶芙特',post:'全球销售总监'},{name:'西尔维斯特',post:'业务发展副总裁'},{name:'唐娜',post:'亚太区总裁'},{name:'王志泳',post:'中国区副总裁'},{name:'威尔伯特',post:'全球销售副总裁'}]
+    let arrStr = ''
+    arr.forEach((item, index) => {
+        arrStr += `
+            <div class="team_item flex fCol acen jcen" >
+                <div class="team_item_m" style="background: url('public/img/team${index}.png');">
+                    <div class="item_info">
+                        <p class="name">${item.name}</p>
+                        <p class="post">${item.post}</p>
+                    </div>
+                </div>
+                <img class="sj" src="public/img/sj.png" />
+                <div class="citem_info ${index > 3 ? 'top2' : ''} ${'top_'+index}">
+                    <div class="cha">
+                        <img src="public/img/psojmdhc3kftz37wofu76xluduce8ukv6m56e8adbe-460b-4f3a-aaec-1d5e1f9aacda.png" />
+                    </div>    
+                    <p class="name">${item.name}</p>
+                    <p class="post">${item.post}</p>
+                    <p class="content">她的方法兼顾领导和支持员工，并且最重要的在于激励。他认为，“你必须目标清晰，为此全身心的投入专注。”</p>
+                </div>
+            </div>
+        `
+    })
+    $('.team_main').html(arrStr)
+    $('.team_item').click(function () {
+        $(this).children('.sj').css({ height: '20px' })
+        $(this).siblings().children('.sj').css({ height: '0' })
+
+        $(this).children('.citem_info').css({ height: 'auto', padding: '40px' })
+        $(this).siblings().children('.citem_info').css({ height: '0', padding: '0px' })
+    })
+    $('.cha').click(function (e) {
+        $(this).parents('.citem_info').css({ height: '0', padding: '0px' })
+        $(this).parents('.citem_info').siblings('.sj').css({ height: '0' })
+        e.stopPropagation();
+    })
+</script>
+
+</html>

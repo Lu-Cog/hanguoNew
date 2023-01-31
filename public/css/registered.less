@@ -1,0 +1,101 @@
+.nav {
+    margin: 30px auto;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #890000;
+}
+
+.reg {
+    padding: 40px;
+    background: url(../img/zcbanner.png);
+    background-size: 100% 100%;
+
+    .reg_main {
+        padding: 43px 96px;
+        background-color: #eeeeee;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+
+        .title {
+            font-size: 30px;
+            font-weight: 400;
+            color: #000000;
+            line-height: 36px;
+            margin-bottom: 36px;
+        }
+
+        .form {
+            div {
+                width: 48%;
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #000000;
+                    line-height: 36px;
+                }
+
+                input {
+                    height: 40px;
+                    padding: 0 10px;
+                    margin: 11px 0 25px;
+                }
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 53px;
+            background-color: #890000;
+            border-radius: 8px;
+            font-size: 26px;
+            font-weight: 400;
+            color: #FFFFFF;
+            margin-bottom: 33px;
+        }
+
+        .tip {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            line-height: 36px;
+            a{
+                color: rgba(61, 139, 255, 1);
+            }
+            input{
+                margin-right: 6px;
+            }
+        }
+    }
+}
+@media screen and (max-width:750px) {
+    .reg{
+        padding: 10px;
+        .reg_main{
+            padding:10px !important;
+            .title{
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            .form{
+                div{
+                    label{
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                    input{
+                        height: 30px;
+                        margin: 10px 0 20px;
+                    }
+                }
+            }
+            .btn{
+                padding: 10px 50px;
+                font-size: 14px;
+            }
+            .tip{
+                font-size: 12px;
+            }
+        }
+    }
+}

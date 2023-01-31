@@ -1,0 +1,134 @@
+.navmean {
+    border-bottom: 1px solid #890000;
+    padding-top: 40px;
+    padding-bottom: 21px;
+    font-size: 18px;
+    font-weight: 400;
+
+    a {
+        &:last-child {
+            color: #890000;
+        }
+    }
+}
+
+.productInfo {
+    margin-top: 35px;
+
+    .pro_info {
+        border: 1px solid #890000;
+
+        .info_head {
+            padding: 12px 24px;
+            font-size: 36px;
+            font-weight: 400;
+            color: #FFFFFF;
+            background-color: #890000;
+        }
+
+        .info_bom {
+            .bom_left {
+                margin: 22px;
+                border: 1px solid #890000;
+            }
+
+            .bom_right {
+                flex: 1;
+                border-left: 1px solid #890000;
+
+                >div {
+                    padding-left: 30px;
+
+                    >p {
+                        &:first-child {
+                            width: 120px;
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: #000000;
+                        }
+                    }
+
+                    display: flex;
+                    align-items: center;
+                    border-top: 1px solid #890000;
+
+                    a {
+                        color: #0080D9;
+                    }
+
+                    &:nth-child(1) {
+                        flex: 2;
+                    }
+
+                    &:nth-child(2) {
+                        flex: 1.5;
+
+                        p {
+                            &:last-child {
+                                font-size: 36px;
+                                font-weight: 400;
+                                color: #890000;
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        flex: 1.2;
+                    }
+
+                    &:nth-child(4),
+                    &:nth-child(5),
+                    &:nth-child(6) {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .pro_spec {
+        min-height: 121px;
+        border: 1px solid #890000;
+        margin-top: 27px;
+    }
+}
+@media screen and (max-width:750px) {
+    .productInfo {
+        .pro_info {
+            .info_head{
+                padding: 10px;
+                font-size: 20px;
+            }
+            .info_bom {
+                .bom_left{
+                    margin: 10px;
+                    width: 30%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .bom_right{
+                    width: 70%;
+                    >div{
+                        padding-left: 10px;
+                        >p{
+                            &:first-child{
+                                font-size: 12px;
+                            }
+                        }
+                        >img{
+                            height: 50px;
+                        }
+                        &:nth-child(2){
+                            p{
+                                &:last-child{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

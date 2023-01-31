@@ -1,0 +1,85 @@
+.industry .ind_main .mySwiper {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.industry .ind_main .mySwiper .swiper-slide {
+  border: 1px solid #890000;
+  width: 100px !important;
+  height: 100px;
+  margin: 0 13px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.industry .ind_main .mySwiper .swiper-slide img {
+  margin-bottom: 10px;
+}
+.industry .ind_main .mySwiper .swiper-slide .bai {
+  display: none;
+}
+.industry .ind_main .mySwiper .swiper-slide-thumb-active {
+  color: #fff;
+  background-color: #890000;
+}
+.industry .ind_main .mySwiper .swiper-slide-thumb-active .bai {
+  display: block;
+}
+.industry .ind_main .mySwiper .swiper-slide-thumb-active .hong {
+  display: none;
+}
+#certify {
+  overflow: hidden;
+}
+#certify .slide {
+  position: relative;
+}
+#certify .slide div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 42px 50px 58px;
+  background-color: rgba(137, 0, 0, 0.6);
+}
+#certify .slide div .title {
+  font-size: 30px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: inherit;
+  text-align: left;
+  margin-bottom: 27px;
+}
+#certify .slide div .content {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: inherit;
+  color: #FFFFFF;
+  text-align: left;
+}
+@media screen and (max-width: 750px) {
+  .ind_main {
+    padding: 0 !important;
+  }
+  #certify .swiper-container {
+    padding: 0;
+  }
+  #certify .swiper-slide {
+    width: 100%;
+    height: auto;
+  }
+  #certify .swiper-slide p {
+    line-height: 20px;
+    font-size: 16px;
+  }
+  #certify .swiper-slide .slide div {
+    padding: 10px;
+  }
+  #certify .swiper-slide .slide div .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  #certify .swiper-slide .slide div .content {
+    font-size: 12px;
+  }
+}

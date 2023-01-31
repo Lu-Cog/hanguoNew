@@ -1,0 +1,426 @@
+.about .numinfo {
+  padding: 20px 0;
+}
+.about .numinfo .numitem {
+  width: 40%;
+  cursor: pointer;
+}
+.about .numinfo .numitem:hover p:nth-child(1) {
+  transform: scale(1.1);
+}
+.about .numinfo .numitem p {
+  color: #000000;
+}
+.about .numinfo .numitem p:nth-child(1) {
+  font-size: 80px;
+  font-family: Impact;
+  font-weight: 400;
+  color: #989898;
+}
+.about .numinfo .numitem p:nth-child(2) {
+  font-size: 20px;
+  padding: 20px 0 30px;
+  border-bottom: 1px solid #890000;
+}
+.about .numinfo .numitem p:nth-child(3) {
+  transition: all 0.3s;
+  font-size: 18px;
+  padding: 20px 0 30px;
+}
+.about .numinfo .numitem p:nth-child(3) span {
+  font-weight: 700;
+}
+.industry {
+  position: relative;
+  background-color: #000;
+}
+.industry .comtitle {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.industry .mySwiper2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.industry .mySwiper2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.industry .mySwiper {
+  position: absolute;
+  bottom: 76px;
+  width: 100%;
+}
+.industry .mySwiper .swiper-slide {
+  width: 100px !important;
+  height: 100px;
+  margin: 0 13px !important;
+  border: 1px dashed #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+.industry .mySwiper .swiper-slide img {
+  margin-bottom: 10px;
+}
+.industry .mySwiper .swiper-slide:hover img {
+  transform: scale(1.2);
+}
+.industry .mySwiper .swiper-slide-thumb-active {
+  background-color: rgba(137, 0, 0, 0.5);
+}
+.mySwiper7 {
+  background-color: #000;
+}
+.bannerSwiper {
+  width: 100%;
+}
+.bannerSwiper .bannerImg {
+  width: 100%;
+}
+.bannerSwiper video {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.bannerSwiper .imgSwiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.bannerSwiper .bannerDiv {
+  position: absolute;
+  left: 15%;
+  bottom: 30%;
+  color: #fff;
+  height: 100px;
+  cursor: pointer;
+}
+.bannerSwiper .bannerDiv span {
+  text-decoration: underline;
+  margin-right: 20px;
+}
+.bannerSwiper .bannerDiv > div {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.bannerSwiper .bannerDiv > div > div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #890000;
+}
+.bannerSwiper .bannerDiv > div > div img {
+  width: 10px;
+}
+.navtab {
+  margin-top: 40px;
+}
+.navtab .navitem {
+  width: 32%;
+  background-color: #890000;
+  color: #fff;
+  padding: 20px 60px 30px;
+}
+.navtab .navitem:hover a {
+  background-color: #fff;
+  color: #890000;
+}
+.navtab .navitem:hover .image_3 {
+  display: none;
+}
+.navtab .navitem:hover .image_5 {
+  display: inline;
+}
+.navtab .navitem .navtitle {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 19px 0 37px;
+}
+.navtab .navitem .navcontent {
+  font-size: 16px;
+  font-weight: 400;
+  height: 90px;
+}
+.navtab .navitem a {
+  border-radius: 20px;
+  padding: 7px 18px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.navtab .navitem .image_5 {
+  display: none;
+}
+.category {
+  padding-bottom: 100px;
+}
+.category .category_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.category .category_item img {
+  margin-bottom: 30px;
+}
+.category .category_item img:hover {
+  transform: scale(1.3);
+}
+.select {
+  background-color: #eee;
+  padding-bottom: 60px;
+}
+.select .select_ment img {
+  margin-bottom: 50px;
+}
+.select .select_ment img:hover {
+  transform: scale(1.3);
+}
+.global {
+  margin-bottom: 80px;
+}
+.global .mySwiper3 .swiper-slide img {
+  width: 60%;
+}
+.global .mySwiper3 .swiper-slide .swiperRight {
+  flex: 1;
+  margin-left: 50px;
+}
+.global .mySwiper3 .swiper-slide .swiperRight .global_name span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #BFBFBF;
+  margin-left: 20px;
+}
+.global .mySwiper3 .swiper-slide .swiperRight .global_name span:first-child {
+  font-size: 26px;
+  color: #000;
+  display: inline-block;
+  margin: 0 70px 0 0;
+}
+.global .mySwiper3 .swiper-slide .swiperRight .alobal_address p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #BFBFBF;
+}
+.global .mySwiper3 .swiper-slide .swiperRight .alobal_address p:first-child {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+.global .mySwiper3 .swiper-slide .swiperRight .global_link p {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #BD0000;
+}
+.news {
+  margin-bottom: 60px;
+}
+.news .new_title {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.news .new_ctitle {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.news .newItem {
+  width: 23%;
+}
+.news .newItem:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+.news .newItem img {
+  width: 100%;
+}
+.news .newItem .newInfo {
+  border: 1px solid #bfbfbf;
+  padding: 26px 24px 36px;
+}
+.news .newItem .newInfo .infoTitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+.news .newItem .newInfo .infoContent {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 17px 0 15px;
+  height: 81px;
+}
+.news .newItem .newInfo .infoTime {
+  font-size: 16px;
+  font-weight: 400;
+  color: #727272;
+}
+@keyframes wai {
+  0% {
+    padding: 10px;
+  }
+  50% {
+    padding: 4px;
+  }
+  100% {
+    padding: 10px;
+  }
+}
+@keyframes nei {
+  0% {
+    width: 40px;
+    height: 40px;
+  }
+  50% {
+    width: 45px;
+    height: 45px;
+  }
+  100% {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .mySwiper7 .bannerDiv {
+    bottom: 0;
+  }
+  .mySwiper7 .bannerDiv span {
+    font-size: 12px;
+  }
+  .mySwiper7 .bannerDiv > div {
+    padding: 4px;
+  }
+  .mySwiper7 .bannerDiv > div > div {
+    width: 20px;
+    height: 20px;
+  }
+  .industry .mySwiper {
+    bottom: 0;
+    display: none;
+  }
+  .navtab {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .navtab .navitem {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .navtab .navitem .navtitle {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  .navtab .navitem .navcontent {
+    font-size: 12px;
+    height: 60px;
+  }
+  .category_ment {
+    flex-wrap: wrap;
+  }
+  .category_ment .category_item {
+    width: 24%;
+  }
+  .category_ment .category_item img {
+    margin-bottom: 10px;
+  }
+  .category_ment .category_item span {
+    font-size: 12px;
+  }
+  .about .numinfo .numitem {
+    width: 100%;
+  }
+  .about .numinfo .numitem p:nth-child(1) {
+    font-size: 30px;
+  }
+  .about .numinfo .numitem p:nth-child(2) {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  .about .numinfo .numitem p:nth-child(3) {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .select {
+    padding-bottom: 10px;
+  }
+  .select .select_ment img {
+    width: 33%;
+    margin-bottom: 20px;
+  }
+  .global {
+    margin-bottom: 40px;
+  }
+  .global .mySwiper3 {
+    padding: 0 !important;
+  }
+  .global .mySwiper3 .swiper-slide .swiperRight {
+    width: 30%;
+    margin-left: 10px;
+  }
+  .global .mySwiper3 .swiper-slide .swiperRight .clockModule {
+    display: none;
+  }
+  .global .mySwiper3 .swiper-slide .swiperRight .global_name {
+    width: 100%;
+  }
+  .global .mySwiper3 .swiper-slide .swiperRight .global_name span {
+    font-size: 12px;
+    margin-left: 2px;
+  }
+  .global .mySwiper3 .swiper-slide .swiperRight .global_name span:first-child {
+    font-size: 20px;
+    margin: 0 2px 0 0;
+  }
+  .global .mySwiper3 .swiper-slide .swiperRight .alobal_address p {
+    font-size: 12px;
+  }
+  .global .mySwiper3 .swiper-slide .swiperRight .alobal_address p:first-child {
+    font-size: 14px;
+  }
+  .global .mySwiper3 .swiper-slide .swiperRight .global_link {
+    width: 100%;
+    flex-direction: column;
+  }
+  .global .mySwiper3 .swiper-slide .swiperRight .global_link p {
+    font-size: 12px;
+    width: 100%;
+    word-break: break-all;
+  }
+  .news .new_title {
+    font-size: 18px;
+  }
+  .news .new_ctitle {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .news .newList {
+    flex-direction: column;
+  }
+  .news .newList .newItem {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .news .newList .newItem .newInfo {
+    padding: 20px;
+  }
+  .news .newList .newItem .newInfo .infoContent {
+    height: auto;
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,18 @@
+.make {
+  margin: 40px auto;
+}
+.make .make_main .layui-tab-title li {
+  background-color: #890000;
+  color: #fff;
+}
+.make .make_main .layui-tab-title .layui-this {
+  background-color: #fff;
+  color: #000;
+}
+.make .make_main .layui-tab-content .layui-tab-item a {
+  width: 30%;
+  margin: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0077C2;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汉国集团</title>
+    <link rel="stylesheet" href="public/css/common.css">
+    <link rel="stylesheet" href="public/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="public/lib/animate.css">
+    <link rel="stylesheet" href="public/css/newsList.css">
+    <link rel="stylesheet" href="public/lib/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="public/lib/upload/basic.min.css">
+    <link rel="stylesheet" href="public/lib/upload/dropzone.min.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="banner">
+        <img src="public/img/pstcuhj6v5s9by5hn2ffpbyldws1jyqyiuee008876-40ac-47c9-a06c-654d7bea2468.jpg" />
+    </div>
+    <div class="news">
+        <div class="comtitle w maAuto">
+            <div class="flex aend">
+                <div class="cn  wow fadeInUp">IC Max新闻中心</div>
+            </div>
+        </div>
+        <div class="news_main w maAuto">
+            <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">2022</li>
+                    <li>2021</li>
+                    <li>2020</li>
+                    <li>2019</li>
+                </ul>
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">
+                        
+                    </div>
+                    <div class="layui-tab-item"></div>
+                    <div class="layui-tab-item"></div>
+                    <div class="layui-tab-item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="comtitle w maAuto">
+            <div class="flex aend">
+                <div class="cn  wow fadeInUp">查询报价</div>
+                <div class="en wow fadeInUp">Inquire about quotation</div>
+            </div>
+        </div>
+        <div class="form_main w maAuto flex jbet">
+            <div class="form_left flex fWrap acen jbet">
+                <div class="textInput">
+                    <label for="">名<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">姓<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">公司<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">邮箱<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">电话号码<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">元件编号<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">联系地址</label>
+                    <input type="text">
+                </div>
+                <div class="textInput">
+                    <label for="">元件数量</label>
+                    <input type="text">
+                </div>
+                <div class="textarea">
+                    <label for="">留言</label>
+                    <textarea name="" id="" cols="10" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="form_right">
+                <div class="flex acen">
+                    <img class="thumbnail_12" referrerpolicy="no-referrer" style="margin-right: 6px;"
+                        src="public/img/pssvj9ahup5mgkja4afjredbds86o58qh1ede29307-c508-4054-b5d3-41675a252121.png" />
+                    <span class="text-group_14">BOM文件上传</span>
+                </div>
+                <form action="/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
+                    <div class="dz-message needsclick">
+                        <p class="dztitle moblieHide">BOM文件拖拽到这里</p>
+                        <div class="bomUp">BOM上传</div>
+                        <div class="imgUp">图片上传</div>
+                        <div class="dow">
+                            <img class="image_21" referrerpolicy="no-referrer"
+                                src="public/img/psrmcsng7s2fm99qzi9o6b5h126sce8wte9c9b9cc-f97f-4cde-b6ce-d5aa651539ce.png" />
+                            <span class="text-group_15">
+                                参考标准模板&nbsp;&nbsp;提升配单准确率
+                            </span>
+                        </div>
+                        <p class="dzcontent">1.请下载“BOM单参考标准模板”;</p>
+                        <p class="dzcontent">2.复制并粘贴BOM数据到模板中，并将文件保存为xls,xlsx或.csv格式；</p>
+                        <p class="dzcontent">3.点击“选择文件”上传保存的文件，文件大小在2M以下</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="submit">提交</div>
+    </div>
+    <div id="footer"></div>
+</body>
+<script src="public/js/clock.js"></script>
+<script src="public/js/jquery.js"></script>
+<script src="public/js/wow.js"></script>
+<script src="public/lib/layui/layui.js"></script>
+<script src="public/js/jquery.waypoints.min.js"></script>
+<script src="public/js/jquery.countup.min.js"></script>
+<script src="public/lib/swiper/swiper-bundle.min.js"></script>
+<script src="public/js/common.js"></script>
+<script src="public/lib/upload/dropzone.min.js"></script>
+<script>
+    
+layui.use('flow', function () {
+    var flow = layui.flow;
+
+    flow.load({
+        elem: '.layui-show' //流加载容器
+        ,
+        isAuto: false,
+        isLazyimg: true,
+        done: function (page, next) { //加载下一页
+            //模拟插入
+            setTimeout(function () {
+                var lis = [];
+                let str = `
+                <div class="newsItem flex acen jbet">
+                    <img src="public/img/psrzgmstndz7pcued1mukvng1o271yvbea66067ae-a365-421f-a0a7-6ef98262be11.png" />
+                    <div class="newsInfo">
+                        <p class="title">灯光、摄像头、拍摄：Xilinx 为索尼新一代直播制作视频切换台提供支持</p>
+                        <p class="content">新款 XVS-G1 视频切换台沿袭现有型号的特性和功能，同时还增添了前沿技术，实现了面向直播活动的增强型视觉处理，最多支持 24 路 4K UHD 通道。</p>
+                        <p class="time moblieShow">2022-08-12</p>
+                    </div>
+                    <div class="date flex fCol acen jcen">
+                        <p class="day">08</p>
+                        <p class="mon">DEC</p>
+                        <p class="year">2021</p>
+                    </div>
+                </div>`
+                for (var i = 0; i < 8; i++) {
+                    lis.push(str)
+                }
+                next(lis.join(''), page < 6); //假设总页数为 6
+            }, 500);
+        }
+    });
+
+});
+</script>
+</html>

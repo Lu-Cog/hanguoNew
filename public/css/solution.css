@@ -1,0 +1,90 @@
+.stock .stock_main .mian_left img {
+  margin-right: 30px;
+}
+.gsStock .gsStock_main .gs_item {
+  position: relative;
+  width: 22%;
+  height: 411px;
+}
+.gsStock .gsStock_main .gs_item:hover p {
+  height: 411px;
+}
+.gsStock .gsStock_main .gs_item:nth-child(1) {
+  background: url(../img/psy1sg3nsv8o9142r69v5jhakacoxccly172915bf51-5fbd-432c-94d7-5d99c7f21710.png);
+}
+.gsStock .gsStock_main .gs_item:nth-child(2) {
+  background: url(../img/c3f907af9f92dbb7f7d6644a476db61297c8bd8d332d3-DCUrKH.png);
+}
+.gsStock .gsStock_main .gs_item:nth-child(3) {
+  background: url(../img/ps3bbyczx6feg6kgrsfxecjjlap7lolf3ytc6af41ae-64a4-4c6f-b5f7-d13bbedf1fba.png);
+}
+.gsStock .gsStock_main .gs_item:nth-child(4) {
+  background: url(../img/psha5f5jh4vvwfywpx3xbxm62g7gsx58g3d8d261c1-c19f-4747-84b9-10e1ac5591c7.png);
+}
+.gsStock .gsStock_main .gs_item p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: rgba(127, 0, 0, 0.7);
+}
+.customized {
+  background-color: #e5e5e5;
+  margin-top: 50px;
+}
+.customized .customized_main .cus_item p {
+  text-align: center;
+  margin: 60px 0;
+}
+@media screen and (max-width: 750px) {
+  .stock .stock_main {
+    flex-direction: column;
+  }
+  .stock .stock_main > img {
+    width: 100%;
+  }
+  .stock .stock_main .mian_left {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .stock .stock_main .mian_left p img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  .gsStock .gsStock_main {
+    flex-direction: column;
+  }
+  .gsStock .gsStock_main .gs_item {
+    width: 100%;
+    background-size: 100% !important;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .gsStock .gsStock_main .gs_item:hover p {
+    height: 200px;
+  }
+  .customized .customized_main {
+    flex-wrap: wrap;
+    justify-content: initial;
+  }
+  .customized .customized_main .cus_item {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .customized .customized_main .cus_item p {
+    margin: 20px 0;
+  }
+  .customized .customized_main .cus_item img {
+    max-width: 60%;
+    max-height: 70px;
+  }
+}
