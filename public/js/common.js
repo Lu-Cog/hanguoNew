@@ -218,36 +218,36 @@ new clockModule({
         // bgcolor: "#25f500",//时钟背景颜色
     },
     {
-        timezone: '-12',
+        timezone: '0',
         cw: 120,
         ch: 120,
     },
     {
-        timezone: '0',
+        timezone: '5',
         cw: 120,
         ch: 120,
     }, {
-        timezone: '0',
+        timezone: '8',
         cw: 120,
         ch: 120,
     }, {
-        timezone: '0',
+        timezone: '8',
         cw: 120,
         ch: 120,
     }, {
-        timezone: '0',
+        timezone: '8',
         cw: 120,
         ch: 120,
     }, {
-        timezone: '0',
+        timezone: '8',
         cw: 120,
         ch: 120,
     }, {
-        timezone: '0',
+        timezone: '8',
         cw: 120,
         ch: 120,
     }, {
-        timezone: '0',
+        timezone: '8',
         cw: 120,
         ch: 120,
     }
